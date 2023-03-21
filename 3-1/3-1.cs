@@ -8,7 +8,6 @@ namespace Lecture3
         {
             int num = 0;
             int sum = 0;
-            int[] arr = new int[1001];
 
             while(true)
             {
