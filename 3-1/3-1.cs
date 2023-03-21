@@ -14,9 +14,8 @@ namespace Lecture3
                 num++;
                 if (num > 1000)
                     break;
-                if (num % 3 != 0 && num % 5 != 0)
-                    continue;
-                sum += num;
+                if (num % 3 == 0 || num % 5 == 0)
+                    sum += num;
             }
             Console.Write("1부터 1000까지의 정수 중 3 또는 5의 배수들의 합: " + sum);
         }
