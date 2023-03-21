@@ -12,12 +12,9 @@ namespace _3_3
 
             for (int num = 0; num < ans.Length; num++)
             {
-                if(num < 2)
-                {
-                    Console.WriteLine("fibonazzi(" + (num + 1) + "): " + ans[num]);
-                    continue;
-                }
-                ans[num] = ans[num - 1] + ans[num - 2];
+                if(num >= 2)
+                    ans[num] = ans[num - 1] + ans[num - 2];
+                
                 Console.WriteLine("fibonazzi(" + (num + 1) + "): " + ans[num]);
             }
         }
